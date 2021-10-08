@@ -1,5 +1,4 @@
-﻿using NHibernate.Mapping.ByCode;
-using NHibernate.Mapping.ByCode.Conformist;
+﻿using NHibernate.Mapping.ByCode.Conformist;
 using UniqueWord.Api.Mappings.Extensions;
 using UniqueWord.Api.Models;
 
@@ -12,7 +11,6 @@ namespace UniqueWord.Api.Mappings
             this.AddIdMapping<TextEntryMapping, TextEntry>();
 
             Property(m => m.NoOfWords, m => m.NotNullable(true));
-            Property(m => m.Filename);
 
             Table("dbo.TextEntry");
         }

@@ -6,6 +6,5 @@ namespace UniqueWord.Api.Models
     {
         public virtual long? Id { get; set; }
         public virtual int NoOfWords { get; set; }
-        public virtual string Filename { get; set; }
     }
 }
