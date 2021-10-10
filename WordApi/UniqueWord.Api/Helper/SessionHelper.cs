@@ -22,7 +22,6 @@ namespace UniqueWord.Api.Helper
 
         public T WrapInTransaction<T>(Func<ISession, T> action)
         {
-            //Ikke implementeret retry 
             using (var transaction = _session.BeginTransaction())
             {
                 try
@@ -62,6 +61,5 @@ namespace UniqueWord.Api.Helper
             }
         }
 
-        //STATELESS SESSIONS
     }
 }
